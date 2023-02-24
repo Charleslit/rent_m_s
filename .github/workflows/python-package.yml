@@ -34,6 +34,7 @@ jobs:
         python -m pip install flask_login 
         python -m pip install flask_wtf
         python -m pip install wtforms
+        python -m pip install email_validator
         
         python -m pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
