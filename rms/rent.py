@@ -52,6 +52,3 @@ def result():
         result = 'INVALID CHOICE'
     entry = result
     return render_template('result.html', entry=entry)
-
-if __name__ == '__main__':
-    app.run(debug=True)
