@@ -1,1 +1,3 @@
-sqlalchemy
+SQLAlchemy
+ flask_bcrypt 
+flask_login 
