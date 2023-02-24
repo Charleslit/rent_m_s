@@ -32,7 +32,7 @@ jobs:
         python -m pip install flask_sqlalchemy
         python -m pip install flask_bcrypt 
         python -m pip install flask_login 
-        python -m pip install flask_wtf
+        python -m pip install flask_wtf, wtforms
         
         python -m pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
