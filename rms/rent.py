@@ -1,5 +1,5 @@
 from rms import app, db 
-rom models import User,Post
+from models import User,Post
 from flask import math
 def rent():
  rooms = input("input the no of rooms occupied:")
