@@ -1,15 +1,27 @@
-from flask import render_template, request
-from datetime import datetime
-
-
-@app.route('/tenants/<int:id>/pay-rent', methods=['GET', 'POST'])
-def pay_rent(id):
-    tenant = Tenant.query.get(id)
-    if request.method == 'POST':
-        amount = float(request.form['amount'])
-        date = datetime.strptime(request.form['date'], '%Y-%m-%d').date()
-        payment = RentPayment(amount=amount, date=date, tenant=tenant)
-        db.session.add(payment)
-        db.session.commit()
-        return 'Payment successful!'
-    return render_template('pay_rent.html', tenant=tenant)
+from models import User,Post
+from flask import math
+def rent():
+ rooms = input("input the no of rooms occupied:")
+ 
+ 
+ tenants = input("input the names of tenants:")
+ 
+ 
+ 
+ rent  = input(  "enter rent payaple per room :")
+ ammount = input( )
+ x=rent
+ y= ammount
+ balance=x-y 
+ 
+ balance = int("rent") - int("ammount")
+ 
+ if (balance > 0):
+ 
+     print("you have a balance of " 
+           "kindly pay up to finish your rent ")
+ 
+ elif (balance < 0):
+       print("you have paid extra"    " rent for this month ")
+ elif (balance == 0):
+       print("you have cleared rent for this month  ")
